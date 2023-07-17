@@ -6,3 +6,14 @@ CASCADE zum Einsatz gebracht wird, um Fehler bei Änderungen zu vermeiden.
 Download & Install MySQL Installer
 https://dev.mysql.com/downloads/file/?id=518834
 (MySQL Server 8.0.33, MySQL Workbench 8.0 CE)
+
+Downlaod & Install PHP
+https://windows.php.net/download#php-8.2
+
+•	PHP Verzeichnis unter C:\ erstellen
+•	Als Umgebungsvaraible unter Path hinzufügen
+•	Testen, ob PHP erfolgreich installiert wurde (php -v)
+•	Im PHP Ordner das php.ini file anpassen:
+o	Nach ;extension suchen und Kommentar bei MySQL PDO bzw. MySQLi entfernen
+•	Sollte keine php.ini existieren, kopiere die php-production.ini und mach es dort.
+•	Danach kann der Server mit php -S localhost:3000 (oder anderem Port) gestartet werden.
