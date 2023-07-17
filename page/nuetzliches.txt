@@ -2,3 +2,7 @@ Ultimate PHP documentation: https://ultimatephpdocumentation.000webhostapp.com/D
 
 Schöner Satz zur Contraints Doku: Für alle verwendeten Constraints in dieser Datenbank wird festgelegt, dass bei einem UPDATE ein
 CASCADE zum Einsatz gebracht wird, um Fehler bei Änderungen zu vermeiden.
+
+Download & Install MySQL Installer
+https://dev.mysql.com/downloads/file/?id=518834
+(MySQL Server 8.0.33, MySQL Workbench 8.0 CE)
