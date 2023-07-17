@@ -1,1 +1,4 @@
 Ultimate PHP documentation: https://ultimatephpdocumentation.000webhostapp.com/Database_PDO.html
+
+Schöner Satz zur Contraints Doku: Für alle verwendeten Constraints in dieser Datenbank wird festgelegt, dass bei einem UPDATE ein
+CASCADE zum Einsatz gebracht wird, um Fehler bei Änderungen zu vermeiden.
