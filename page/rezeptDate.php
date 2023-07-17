@@ -22,7 +22,8 @@ if(isset($_POST['month']))
   }
 }elseif(isset($_POST['date']))
 {
-  try{
+  try
+  {
     if(isset($_POST['date_von']) && isset($_POST['date_bis']) && empty($_POST['date_bis']))
     {
       dateVon($_POST['date_von']);
@@ -31,7 +32,8 @@ if(isset($_POST['month']))
     {
       dateBis($_POST['date_von'], $_POST['date_bis']);
     }
-  }catch(Exception $e)
+  }
+  catch(Exception $e)
   {
     echo 'Error - Rezept: '.$e->getCode().': '.$e->getMessage().'<br>';
   }
@@ -212,7 +214,7 @@ function selectMonth($month)
               WHERE YEAR(zub_bereitgestellt_am) 
               = YEAR(CURDATE()) AND MONTH(zub_bereitgestellt_am) 
               = MONTH(CURDATE())";
-    makeTablePar($query, array($month));
+    makeTable($query, array($month));
   }
 }
 
@@ -252,7 +254,7 @@ function dateVon($date)
               left join rezeptname
               on rezeptname.rez_id = zubereitung.rez_id
               where zub_bereitgestellt_am >= ?";
-    makeTablePar($query, array($date));
+    makeTable($query, array($date));
   }
 }
 
@@ -298,7 +300,7 @@ function dateBis($datevon, $datebis)
               where zub_bereitgestellt_am >= ? 
               and zub_bereitgestellt_am <= ?
               and zubereitung.zub_id = ?";
-    makeTablePar($query, $array);
+    makeTable($query, $array);
   }
 }
 
